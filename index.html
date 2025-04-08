@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Portfolio</title>
+  <title>Home - Portfolio</title>
+  <meta name="description" content="Personal portfolio website showcasing research, publications, and projects">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Google Fonts - Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Feather Icons (alternative to Lucide) -->
-  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <div class="page-wrapper">
-    <!-- Header/Navbar -->
-    <header class="header">
+  <div class="layout">
+    <header class="navbar">
       <div class="container">
-        <div class="header-content">
-          <a href="index.html" class="logo">Shamim Rahim Refat</a>
-
-          <!-- Desktop Navigation -->
-          <nav class="nav-desktop">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="research.html" class="nav-link">Research & Publications</a>
-            <a href="datasets.html" class="nav-link">Datasets</a>
-            <a href="projects.html" class="nav-link">Projects</a>
-            <a href="experience.html" class="nav-link">Work Experience</a>
-            <a href="education.html" class="nav-link">Education</a>
-            <a href="cv.html" class="nav-link">CV</a>
-          </nav>
-
-          <!-- Mobile Navigation Toggle -->
-          <div class="nav-mobile-controls">
-            <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle Theme">
-              <i data-feather="sun" class="icon-light"></i>
-              <i data-feather="moon" class="icon-dark"></i>
-            </button>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
-              <i data-feather="menu"></i>
-            </button>
-          </div>
+        <a href="index.html" class="logo">Shamim Rahim Refat</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="research.html" class="nav-link">Research & Publications</a>
+          <a href="datasets.html" class="nav-link">Datasets</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="experience.html" class="nav-link">Work Experience</a>
+          <a href="education.html" class="nav-link">Education</a>
+          <a href="cv.html" class="nav-link">CV</a>
+        </nav>
+        
+        <!-- Mobile Navigation Toggle -->
+        <div class="mobile-nav-toggle">
+          <button id="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-
-        <!-- Mobile Navigation Menu -->
-        <nav id="nav-mobile" class="nav-mobile">
+      </div>
+      
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <nav class="container">
           <a href="index.html" class="nav-link active">Home</a>
           <a href="research.html" class="nav-link">Research & Publications</a>
           <a href="datasets.html" class="nav-link">Datasets</a>
@@ -58,37 +47,33 @@
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <div class="container">
-        <!-- Profile Header Card -->
+    <main>
+      <div class="container py-12">
         <div class="profile-header">
           <h2>Welcome to my Portfolio</h2>
-          <p>Explore my research, projects and professional journey. Feel free to connect with me through any of the
-            social links below.</p>
+          <p>Explore my research, projects and professional journey. Feel free to connect with me through any of the social links below.</p>
         </div>
 
-        <!-- Profile Section -->
-        <div class="profile-section">
-          <div class="profile-image-container">
-            <div class="profile-image">
-              <img src="\files\Profile.jpg" alt="Profile Picture">
+        <div class="profile-content">
+          <div class="profile-image">
+            <div class="image-card">
+              <img src="files/Profile.jpg" alt="Profile Picture">
             </div>
           </div>
 
-          <div class="profile-content">
-            <div class="profile-heading">
+          <div class="profile-info">
+            <div class="profile-title">
               <h1>Shamim Rahim Refat</h1>
-              <p class="profile-title">ML/AI Enthusiast | Researcher | Computer Vision</p>
+              <p>ML/AI Enthusiast | Researcher | Computer Vision</p>
             </div>
 
             <div class="profile-bio">
-              <p>Aspiring enthusiast in Machine Learning and Artificial Intelligence, focusing in computer vision.
-                Enthusiastic about contributing to dynamic teams and continuously advancing my skills and knowledge
-                through hands-on experience and learning.</p>
-              <p>I have published several papers in top-tier conferences and I am passionate about open science and
-                sharing my research with the community. On this website, you can find information about my research,
-                publications, datasets, projects, work experience and education.</p>
+              <p>
+                Aspiring enthusiast in Machine Learning and Artificial Intelligence, focusing in computer vision. Enthusiastic about contributing to dynamic teams and continuously advancing my skills and knowledge through hands-on experience and learning.
+              </p>
+              <p>
+                I have published several papers in top-tier conferences and I am passionate about open science and sharing my research with the community. On this website, you can find information about my research, publications, datasets, projects, work experience and education.
+              </p>
             </div>
 
             <div class="profile-actions">
@@ -96,42 +81,39 @@
               <a href="cv.html" class="btn btn-outline">View CV</a>
             </div>
 
-            <div class="social-connect">
+            <div class="social-section">
               <h2>Connect with me</h2>
               <div class="social-links">
                 <a href="mailto:n.a.refat2000@gmail.com" class="social-btn" target="_blank" rel="noreferrer">
-                  <i data-feather="mail"></i>
+                  <i class="fas fa-envelope"></i>
                   <span>Email</span>
                 </a>
                 <a href="https://github.com/SapphireFang1998" class="social-btn" target="_blank" rel="noreferrer">
-                  <i data-feather="github"></i>
+                  <i class="fab fa-github"></i>
                   <span>GitHub</span>
                 </a>
                 <a href="https://www.linkedin.com/in/sapphirefang1998/" class="social-btn" target="_blank" rel="noreferrer">
-                  <i data-feather="linkedin"></i>
+                  <i class="fab fa-linkedin"></i>
                   <span>LinkedIn</span>
                 </a>
                 <a href="https://www.facebook.com/SapphireFang1998" class="social-btn" target="_blank" rel="noreferrer">
-                  <i data-feather="facebook"></i>
+                  <i class="fab fa-facebook"></i>
                   <span>Facebook</span>
                 </a>
                 <a href="https://www.instagram.com/sapphirefang1998/" class="social-btn" target="_blank" rel="noreferrer">
-                  <i data-feather="instagram"></i>
+                  <i class="fab fa-instagram"></i>
                   <span>Instagram</span>
                 </a>
-                <a href="https://scholar.google.com/citations?user=bbQPmEcAAAAJ" class="social-btn" target="_blank"
-                  rel="noreferrer">
-                  <i data-feather="book-open"></i>
+                <a href="https://scholar.google.com/citations?user=bbQPmEcAAAAJ" class="social-btn" target="_blank" rel="noreferrer">
+                  <i class="fas fa-book-open"></i>
                   <span>Google Scholar</span>
                 </a>
-                <a href="https://www.researchgate.net/profile/Shamim-Rahim-Refat" class="social-btn" target="_blank"
-                  rel="noreferrer">
-                  <i data-feather="database"></i>
+                <a href="https://www.researchgate.net/profile/Shamim-Rahim-Refat" class="social-btn" target="_blank" rel="noreferrer">
+                  <i class="fas fa-database"></i>
                   <span>ResearchGate</span>
                 </a>
-                <!-- <a href="https://www.scopus.com/authid/detail.uri?authorId=yourid" class="social-btn" target="_blank"
-                  rel="noreferrer">
-                  <i data-feather="award"></i>
+                <!-- <a href="https://www.scopus.com/authid/detail.uri?authorId=yourid" class="social-btn" target="_blank" rel="noreferrer">
+                  <i class="fas fa-award"></i>
                   <span>Scopus</span>
                 </a> -->
               </div>
@@ -141,32 +123,36 @@
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <p class="copyright">© <span id="current-year"></span> Shamim Rahim Refat. All rights reserved.</p>
-        <div class="footer-social">
-          <!-- <a href="mailto:example@email.com" target="_blank" rel="noreferrer" aria-label="Email">
-            <i data-feather="mail"></i>
+        <p class="copyright">© 2025 Shamim Rahim Refat. All rights reserved.</p>
+        <!-- <div class="footer-social">
+          <a href="mailto:example@email.com" target="_blank" rel="noreferrer">
+            <i class="fas fa-envelope"></i>
+            <span class="sr-only">Email</span>
           </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <i data-feather="github"></i>
+          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+            <i class="fab fa-github"></i>
+            <span class="sr-only">GitHub</span>
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <i data-feather="linkedin"></i>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+            <i class="fab fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span>
           </a>
-          <a href="https://facebook.com/yourusername" target="_blank" rel="noreferrer" aria-label="Facebook">
-            <i data-feather="facebook"></i>
+          <a href="https://facebook.com/yourusername" target="_blank" rel="noreferrer">
+            <i class="fab fa-facebook"></i>
+            <span class="sr-only">Facebook</span>
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <i data-feather="instagram"></i>
-          </a> -->
-        </div>
+          <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">
+            <i class="fab fa-instagram"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </div> -->
       </div>
     </footer>
   </div>
 
   <script src="js/main.js"></script>
 </body>
-
 </html>
+
