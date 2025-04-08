@@ -504,7 +504,6 @@ footer .container {
 
 .page-header p {
   font-size: 1.125rem;
-  color: #15803d;
   margin-bottom: 0;
 }
 
@@ -523,8 +522,7 @@ footer .container {
   margin-top: 2rem;
 }
 
-.publications-section h2 {
-  font-size: 1.875rem;
+.publications-section h1 {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--primary);
@@ -572,8 +570,13 @@ footer .container {
 }
 
 .publication-authors {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--foreground);
+}
+
+.highlight-author {
+  font-weight: bold;
+  color: #d9534f;
 }
 
 .publication-journal {
