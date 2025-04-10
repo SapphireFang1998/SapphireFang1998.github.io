@@ -982,9 +982,27 @@ pre {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+.dataset-image {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+}
+
+.dataset-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.dataset-image:hover img {
+  transform: scale(1.05);
+}
+
 .dataset-header {
   padding: 1.5rem;
   border-bottom: 1px solid #dcfce7;
+  border-top: 1px solid #dcfce7;
 }
 
 .dataset-header h3 {
