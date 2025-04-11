@@ -1020,6 +1020,13 @@ pre {
   color: var(--muted-foreground);
 }
 
+.dataset-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 .dataset-content {
   padding: 1rem 1.5rem;
   flex-grow: 1;
