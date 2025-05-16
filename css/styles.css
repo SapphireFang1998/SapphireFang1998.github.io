@@ -303,6 +303,7 @@ footer .container {
   transition: all 0.2s;
   cursor: pointer;
   text-decoration: none;
+  gap: 0.5rem;
 }
 
 .btn-sm {
@@ -1105,7 +1106,6 @@ pre {
 .cv-preview {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1.414;
 }
 
 .cv-preview img {
